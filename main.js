@@ -1,5 +1,5 @@
 function startCounter(){
-    let date = new Date(document.getElementById("inputDate").value)
+    let date = new Date(document.getElementById("inputDate").value);
 
     if(date != "Invalid Date"){
         document.getElementById("menu").style.display = "none"
