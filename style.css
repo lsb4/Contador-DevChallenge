@@ -1,0 +1,206 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    opacity: 0; 
+    transition: opacity 1s ease-out;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.menu h1 {
+    color: #21EB00;
+    font-size: 35px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.menu label {
+    color: rgb(136, 136, 136);
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 0;
+}
+
+#inputDate {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(136, 136, 136);
+    background-color: #252525;
+    border: none;
+    border-radius: 16px 16px;
+    padding: 8px 0px 8px 0px; 
+    width: 250px;
+    text-align: center;
+    outline: none;
+}
+
+#inputDate::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+#submitButton {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #21EB00;
+    margin-top: 15px;
+    border: none;
+    border-radius: 16px 16px;
+    padding: 8px 0px 8px 0px; 
+    width: 264px;
+}
+
+#error {
+    color: rgb(255, 13, 13);
+    font-size: 20px;
+    font-weight: 0;
+}
+
+.counter {
+    width: 100%;
+    text-align: center;
+}
+
+.counter nav{
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter h1 {
+    color: #21EB00;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#resetButton {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #21EB00;
+    border: none;
+    border-radius: 26px 26px;
+    padding: 0; 
+    height: 35px;
+    width: 125px;
+}
+
+.counter h2 {
+    color: #2c2c2c;
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.time {
+    width: 700px;
+    color: #21EB00;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto;
+}
+
+.time div {
+    text-align: center;
+    padding: auto;
+}
+
+.time div h1{
+    margin: 0;
+    padding: 0;
+    font-size: 120px;
+    color: white;
+}
+
+.time div p{
+    margin: 0;
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+    .menu h1 {
+        font-size: 55px;
+    }
+
+    .menu label {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    #inputDate {
+        font-size: 19px;
+        border-radius: 16px 16px;
+        padding: 10px 0px 10px 22px; 
+        width: 350px;
+    }
+
+    #submitButton {
+        font-size: 24px;
+        border-radius: 16px 16px;
+        padding: 8px 0px 8px 0px; 
+        width: 363px;
+    }    
+}
+
+@media (max-width: 750px) {
+    .time div h1{
+        font-size: 70px;
+    }
+
+    .counter h2{
+        font-size: 60px;
+    }
+    
+    .time div p{
+        font-size: 18px;
+    }
+
+    .hour, .minute, .day {
+        padding-right: 40px;
+    }
+
+    .time {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .time div h1{
+        font-size: 50px;
+    }
+
+    .counter h2{
+        font-size: 50px;
+    }
+    
+    .time div p{
+        font-size: 15px;
+    }
+
+    .hour, .minute, .day {
+        padding-right: 40px;
+    }
+
+    .time {
+        width: 90%;
+    }
+}

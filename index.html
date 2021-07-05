@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+</head>
+<body>
+    <div class="menu" id="menu">
+        <h1>Contador</h1>
+        <label for="inputDate">Informe uma data</label>
+        <input type="date" id="inputDate" name="inputDate">
+        <button id="submitButton" onclick="startCounter()">Iniciar Contagem</button></a>
+        <p id="error" style="display: none;">Insira uma data válida!</p>
+    </div>
+
+    <div class="counter" id="counter" style="display: none;">
+        <nav>
+            <h1>Contador</h1>
+            <a href="index.html"><button id="resetButton" onclick="backMenu()">Reiniciar</button></a>
+        </nav>
+        <h2>Faltam</h2>
+        <div class="time">
+            <div class="day">
+                <h1 id="days"></h1>
+                <p>Dias</p>
+            </div>
+            <div class="hour">
+                <h1 id="hours"></h1>
+                <p>Horas</p>
+            </div>
+            <div class="minute">
+                <h1 id="minutes"></h1>
+                <p>Minutos</p>
+            </div>
+            <div class="second">
+                <h1 id="seconds"></h1>
+                <p>Segundos</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
